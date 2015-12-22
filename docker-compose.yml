@@ -1,0 +1,8 @@
+nginx:
+  image: cartodb-nginx
+  ports:
+   - "80:80"
+  links:
+   - cartodb:cartodb.localhost
+cartodb:
+  image: sverhoeven/cartodb
